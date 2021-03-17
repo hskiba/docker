@@ -11,6 +11,7 @@ WORKDIR /protobuf-3.15.6
 RUN ./configure
 RUN make install
 WORKDIR /usr/local/lib
+RUN tar cvzf libproto.tgz libproto*
 
 FROM scratch
-COPY --from=python_protobuf /usr/local/lib/libproto* /usr/local/lib/
+COPY --from=python_protobuf /usr/local/lib/libproto.tgz /usr/local/lib/libproto.tgz
