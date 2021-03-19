@@ -15,3 +15,4 @@ RUN tar cvzf libproto.tgz libproto*
 
 FROM scratch
 COPY --from=python_protobuf /usr/local/lib/libproto.tgz /usr/local/lib/libproto.tgz
+COPY --from=python_protobuf /protobuf-python-3.15.6.tar.gz /protobuf-python-3.15.6.tar.gz
