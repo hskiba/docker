@@ -25,9 +25,9 @@ RUN if [[ $(uname -m) == aarch64 ]]; then \
    else \
    GOARCH=amd64; \
    fi && \
-   wget https://releases.hashicorp.com/terraform/0.14.4/terraform_0.14.4_linux_$GOARCH.zip && \
-   unzip terraform_0.14.4_linux_$GOARCH.zip && \
-   rm terraform_0.14.4_linux_$GOARCH.zip
+   wget https://releases.hashicorp.com/terraform/0.15.5/terraform_0.15.5_linux_$GOARCH.zip && \
+   unzip terraform_0.15.5_linux_$GOARCH.zip && \
+   rm terraform_0.15.5_linux_$GOARCH.zip
 
 RUN mv terraform /usr/local/bin
 
