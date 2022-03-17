@@ -6,4 +6,4 @@ docker buildx build \
 docker buildx build \
        --push \
        --platform linux/arm64,linux/amd64 \
-       --tag henryskiba/python-protobuf-compiled:3.16.0 .
+       --tag henryskiba/python-protobuf-compiled:3.19.4 .
